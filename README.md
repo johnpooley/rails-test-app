@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple website based on Ruby On Rails.
+Users Can upload pictures, edit information about the pictures, and delete pictures.
 
-Things you may want to cover:
+A deployed version of this site can be found at https://railstestjp.herokuapp.com/
 
-* Ruby version
+The frontend is deployed on heroku and the pictures are stored on an AWS S3 bucket
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run locally you need to have rails installed.
+You need to have an AWS key that you can insert into config/initializers.carrierwave.rb
+In Terminal:
+    $bundle install
+    $rails server
+    
+This should now work on a localhost.
