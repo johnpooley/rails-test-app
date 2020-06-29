@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailTestApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<header>
+  <h1><%= link_to "Venue", root_path%></h1>
+</header>
+
+<nav>
+  <%= link_to "New Post", new_post_path %>
+</nav>
+<main>
+  <%= yield %>  
+</main>
+
+  </body>
+</html>
